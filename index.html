@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Mock - Pure HTML/CSS/JS</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Left navigation rail -->
+    <nav class="side-rail" aria-label="Primary">
+      <a href="#" class="rail-btn" title="Menu">≡</a>
+      <a href="#" class="rail-btn" title="Chat">💬</a>
+      <a href="#" class="rail-btn" title="Mail">✉️</a>
+      <a href="#" class="rail-btn" title="Notifications">🔔</a>
+    </nav>
+
+    <!-- Top App Bar -->
+    <header class="app-bar with-rail">
+      <div class="app-bar__left">
+        <button class="icon-btn" aria-label="Menu" title="Menu">
+          <span class="material-icon">≡</span>
+        </button>
+        <div class="app-title">Menu</div>
+        <nav class="top-menu">
+          <a href="#" class="top-menu__item is-active">Menu 1</a>
+          <a href="#" class="top-menu__item">Menu 2</a>
+          <a href="#" class="top-menu__item">Menu 3</a>
+          <a href="#" class="top-menu__item">Menu 4</a>
+          <a href="#" class="top-menu__item">Menu 5</a>
+          <a href="#" class="top-menu__item">Menu 6</a>
+          <a href="#" class="top-menu__item">Menu 7</a>
+        </nav>
+      </div>
+      <div class="app-bar__right">
+        <span class="page-title">Lorem Ipsum</span>
+        <div class="user-chip">
+          <span class="user-name">David Warner</span>
+          <span class="user-dot"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Secondary header: breadcrumbs and filters -->
+    <section class="toolbar with-rail">
+      <nav class="breadcrumbs">
+        <a class="crumb home" href="#" aria-label="Home">🏠</a>
+        <span class="chev">›</span>
+        <a class="crumb" href="#">Path 1</a>
+        <span class="chev">›</span>
+        <a class="crumb" href="#">Path 2</a>
+        <span class="chev">›</span>
+        <a class="crumb is-active" href="#">Path 3</a>
+      </nav>
+
+      <div class="filters">
+        <button class="pill with-caret">Lorem Ipsum</button>
+        <button class="pill with-caret">Lorem Ipsum</button>
+        <button class="pill with-caret">Lorem Ipsum</button>
+        <button class="pill with-caret">Lorem Ipsum</button>
+        <button class="pill with-caret">Lorem Ipsum</button>
+        <button class="pill with-caret">Lorem Ipsum</button>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="tabs with-rail" role="tablist" aria-label="Main Tabs">
+      <button
+        class="tab is-active"
+        role="tab"
+        aria-selected="true"
+        data-tab="tab-1"
+      >
+        Tab 1
+      </button>
+      <button class="tab" role="tab" data-tab="tab-2">Tab 2</button>
+      <button class="tab" role="tab" data-tab="tab-3">Tab 3</button>
+      <button class="tab" role="tab" data-tab="tab-4">Tab 4</button>
+      <button class="tab" role="tab" data-tab="tab-5">Tab 5</button>
+      <button class="tab" role="tab" data-tab="tab-6">Tab 6</button>
+    </section>
+
+    <main class="page with-rail">
+      <div class="columns">
+        <!-- Left column card -->
+        <aside class="person-card">
+          <div class="person-card__header">
+            <img class="avatar photo" src="../assets/images/v3_0282261 1.png" alt="Liam Walker" />
+            <div class="person-meta">
+              <div class="person-name">Liam Walker <span class="badge">31 Years</span></div>
+              <div class="person-sub">Lorem ipsum</div>
+            </div>
+            <div class="person-actions">
+              <button id="timerBtn" class="btn btn-primary">Start Timer</button>
+              <button class="icon-btn" aria-label="More">⋮</button>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <dl class="kv">
+            <div class="kv__row">
+              <dt>Lorem Ipsum</dt>
+              <dd>Dolor Sit Amet</dd>
+            </div>
+            <div class="kv__row">
+              <dt>Lorem Ipsum</dt>
+              <dd>Dolor Sit Amet</dd>
+            </div>
+            <div class="kv__row">
+              <dt>Lorem Ipsum</dt>
+              <dd>Dolor Sit Amet</dd>
+            </div>
+          </dl>
+
+          <div class="actions">
+            <button class="chip"><span>💬</span> Chat</button>
+            <button class="chip"><span>✉️</span> eMail</button>
+            <button class="chip"><span>🟢</span> WhatsApp</button>
+            <button class="chip"><span>📞</span> Call</button>
+          </div>
+
+          <div class="section">
+            <h3 class="section__title">
+              <span class="section__icon">🗂️</span>
+              <span>Lorem Ipsum</span>
+            </h3>
+
+            <div class="ticket">
+              <div class="ticket__row">
+                <div>
+                  <div class="ticket__title">Lorem Ipsum</div>
+                  <div class="ticket__id">LW-SC190-0020</div>
+                </div>
+                <span class="status status--success">Submitted</span>
+              </div>
+
+              <div class="ticket__grid">
+                <div>
+                  <div class="muted">Source</div>
+                  <div>Dolor Sit Amet</div>
+                </div>
+                <div>
+                  <div class="muted">Opened</div>
+                  <div>Dolor Sit Amet</div>
+                </div>
+                <div>
+                  <div class="muted">Submitted</div>
+                  <div>Dolor Sit Amet</div>
+                </div>
+                <div>
+                  <div class="muted">Approved</div>
+                  <div>-</div>
+                </div>
+              </div>
+
+              <div class="people">
+                <div class="muted">Lorem Ipsum</div>
+                <div class="avatars">
+                  <span class="avatar tiny">ER</span>
+                  <span class="avatar tiny">ET</span>
+                  <span class="avatar tiny">LB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right column content -->
+        <section class="content">
+          <div id="tab-1" class="panel is-active">
+            <h2>Lorem Ipsum</h2>
+            <div class="grid cols-3">
+              <div>
+                <h3>Lorem Ipsum</h3>
+                <p class="muted">Simply dummy text</p>
+                <div class="list">
+                  <div class="list__item">
+                    <div class="list__title">Lorem Ipsum</div>
+                    <div class="muted">Simply dummy text</div>
+                  </div>
+                  <div class="list__item">
+                    <div class="list__title">Lorem Ipsum</div>
+                    <div class="muted">Simply dummy text</div>
+                  </div>
+                  <div class="list__item">
+                    <div class="list__title">Lorem Ipsum</div>
+                    <div class="muted">Simply dummy text</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3>Dummy text</h3>
+                <p class="muted">Simply dummy text</p>
+                <div class="list">
+                  <div class="list__item">
+                    <div class="list__title">Lorem Ipsum</div>
+                    <div class="muted">Simply dummy text</div>
+                  </div>
+                  <div class="list__item">
+                    <div class="list__title">Lorem Ipsum</div>
+                    <div class="muted">Simply dummy text</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="with-flag">🇬🇧 <span>Lorem Ipsum</span></h3>
+                <p class="muted">Simply dummy text</p>
+                <div class="list">
+                  <div class="list__item">
+                    <div class="list__title">Lorem Ipsum</div>
+                    <div class="muted">Simply dummy text</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-2" class="panel">
+            <h2>Tab 2 Content</h2>
+            <p class="muted">Add whatever you need here.</p>
+          </div>
+          <div id="tab-3" class="panel">
+            <h2>Tab 3 Content</h2>
+          </div>
+          <div id="tab-4" class="panel">
+            <h2>Tab 4 Content</h2>
+          </div>
+          <div id="tab-5" class="panel">
+            <h2>Tab 5 Content</h2>
+          </div>
+          <div id="tab-6" class="panel">
+            <h2>Tab 6 Content</h2>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
